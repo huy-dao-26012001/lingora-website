@@ -1,0 +1,63 @@
+{
+  "name": "lingora-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint": "eslint",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit",
+    "check": "npm run lint && npm run format:check && npm run type-check",
+    "prepare": "husky",
+    "commitlint": "commitlint"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@storybook/addon-a11y": "^10.6.9",
+    "@storybook/addon-docs": "^10.6.9",
+    "@storybook/addon-vitest": "^10.6.9",
+    "@storybook/nextjs-vite": "^10.6.9",
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitest/browser-playwright": "^4",
+    "@vitest/coverage-v8": "^4",
+    "eslint": "^10.15.0",
+    "eslint-config-next": "16.4.6",
+    "husky": "^9.1.7",
+    "playwright": "latest",
+    "prettier": "3.10.1",
+    "storybook": "^10.6.9",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5",
+    "vitest": "^4"
+  },
+  "packageManager": "pnpm@12.23.0",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,mdx,yml,yaml,css,scss,html}": [
+      "prettier --write"
+    ]
+  },
+  "author": {
+    "name": "huy dao",
+    "email": "huy.dao.26012001@gmail.com",
+    "github": "https://github.com/huy-dao-26012001"
+  }
+}

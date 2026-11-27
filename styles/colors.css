@@ -1,0 +1,114 @@
+/* =========================================================
+   LINGORA DESIGN TOKENS
+   Source: Figma — 01 Cover & Design System
+   Tailwind CSS v4
+   ========================================================= */
+
+/* ---------- Light theme ---------- */
+
+:root {
+  color-scheme: light;
+
+  /* Brand */
+  --primary: #292b65;
+  --primary-hover: #202150;
+  --primary-active: #191a42;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f47e63;
+  --accent: #d5eae1;
+
+  --brand-ink: #292b65;
+  --on-brand: #ffffff;
+
+  /* Surfaces */
+  --background: #f8f7f2;
+  --surface: #ffffff;
+  --surface-elevated: #efeee8;
+
+  /* Text */
+  --foreground: #20253a;
+  --text-secondary: #555c6b;
+  --text-muted: #6b7280;
+
+  /* Borders */
+  --border: #dcd ddd7;
+  --divider: #e5e5de;
+
+  /* Feedback */
+  --success: #216951;
+  --warning: #8b5c13;
+  --error: #b53b3b;
+  --information: #354d9a;
+  --focus-ring: #5258ca;
+}
+
+/* ---------- Dark theme ---------- */
+
+.dark {
+  color-scheme: dark;
+
+  --primary: #bcbeff;
+  --primary-hover: #ced0ff;
+  --primary-active: #a3a6f5;
+  --primary-foreground: #171b32;
+
+  --secondary: #ff987f;
+  --accent: #254e46;
+
+  --brand-ink: #292b65;
+  --on-brand: #ffffff;
+
+  /* Surfaces */
+  --background: #121722;
+  --surface: #1c2331;
+  --surface-elevated: #252e3d;
+
+  /* Text */
+  --foreground: #f3f1e9;
+  --text-secondary: #bcc3d0;
+  --text-muted: #a8b0c0;
+
+  /* Borders */
+  --border: #3d4758;
+  --divider: #303b4a;
+
+  /* Feedback */
+  --success: #87d4b6;
+  --warning: #f1ca7f;
+  --error: #ff9a9a;
+  --information: #abbdff;
+  --focus-ring: #b7b9ff;
+}
+
+/* ---------- Tailwind semantic utilities ---------- */
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-active: var(--primary-active);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+
+  --color-brand-ink: var(--brand-ink);
+  --color-on-brand: var(--on-brand);
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+
+  --color-foreground: var(--foreground);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-border: var(--border);
+  --color-divider: var(--divider);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-information: var(--information);
+  --color-focus-ring: var(--focus-ring);
+}
